@@ -1,0 +1,113 @@
+/*#input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    border: 1px solid lightgray;
+}
+img {
+    display: flex;
+    justify-content: center;
+    margin-left: 45%;
+    width: 350px;
+    height: 150px;
+}
+label {
+    font-size: 3em;
+    display: flex;
+    margin-left: 45%;
+    border-style: outset;
+    width: 50%;
+}
+input {
+    margin-left: 45%;
+    border-style: outset;
+}*/
+
+
+
+.container {  display: grid;
+    grid-template-columns: 400px 1000px;
+    grid-template-rows: 300px 366px 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Logo"
+      ". Login_in"
+      ". Login_in";
+      height: auto;
+      font-size: 4em;
+      
+     
+  }
+  
+  .Logo { grid-area: Logo;
+            margin-left: 2500px;
+             
+    }
+  
+  .Login_in { grid-area: Login_in; 
+    margin-left: 2000px;
+    border-style: outset;
+    border-color: lightgray;
+    width: 135%;
+    text-align: center;
+    padding: 0 65px 105px 65px;
+    
+                
+ }
+ 
+ form h1 {
+    font-weight: 100;
+    margin-right: 600px;
+    margin-top: 100px;
+ }
+
+ label {
+    font-weight: 600;
+ }
+
+ input[type=text] {
+    padding: 50px 400px;
+    color: lightgray;
+    opacity: 30%;
+ }
+input[type=password] {
+    padding: 50px 400px;
+    color: lightgray;
+    opacity: 30%;
+    
+}
+button {
+    font-size: 1em;
+    width: 75%;
+    height: 150px;
+    background-color: #f0c14bc3;
+}
+input[type=checkbox] {
+    width: 40px;
+    height: 40px;
+}
+
+.bar {
+    border: 0;
+    border-top: 1px solid  lightgrey;
+    text-align: center;
+    opacity: 55%; }
+.bar::after {
+    content: "NEW TO AMAZON?";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1em;
+    padding: 0 1.5em;
+    background: white;
+}
+
+.create {
+    background-color: lightgray;
+    
+}
+a {
+    text-decoration: none;
+}
